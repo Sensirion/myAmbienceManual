@@ -212,6 +212,12 @@ The Manage gadgets area allows you to see all the previously detected gadgets an
 - delete the data of the gadget
 - Select multiple gadgets
 
+There are three different states a gadget can be:
+
+- Active: denoted in green color
+- Connecting: Denoted in light blue color
+- Not found (Gadget is out of reach): Denoted in grey color
+
 ## Support and Feedback
 
 A really important aspect of our mindset at Sensirion is to actively
