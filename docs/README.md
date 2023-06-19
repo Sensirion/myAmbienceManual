@@ -197,7 +197,7 @@ For more information about EDF files please visit the [ControlCenter Manual](htt
 In the app settings you can adjust the general settings of myAmbience:
 
 - Adjust the measurement system from measuring in degrees Celcius or degrees Fahrenheit or Kelvin
-- Select which computed signals will be displayed if the measured signals are available
+- Select which computed signals will be displayed if the measured signals are available. To learn more about the computed signals for the SHT4x SmartGadget visit the link [here](https://sensirion.com/resource/application_note/sht/glance).
 - Opt in/out in our analytics
 - Connect to a Nubo device
 
