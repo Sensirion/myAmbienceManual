@@ -6,7 +6,7 @@
 This is a short introduction to the Sensirion MyAmbience app for iOS and Android devices. 
 MyAmbience is used together with the official Sensirion Demonstrators which can be found on the [Sensirion website](https://sensirion.com/search?q=gadget) as well as 3rd party do-it-yourself demonstrators.
 
-The Manual refers to myAmbience version 3.0 and newer. 
+The Manual refers to MyAmbience version 3.0 and newer. 
 
 ## Supported Demonstrators
 
@@ -29,7 +29,7 @@ Learn more about the SHT4x and the SHT4x SmartGadget at [our website](https://se
 ### SHT31 SmartGadget
 ![SCD4x CO2 Gadget](images/sht31_gadget.png ":size=30%")
 
-This is deprecated but still compatible with the myAmbience app.
+This is deprecated but still compatible with the MyAmbience app.
 Learn more about the SHT3x and the SHT31 SmartGadget at [our website](https://sensirion.com/products/catalog/SHT31-Smart-Gadget)
 
 ### Nubo Air Monitoring system
@@ -40,13 +40,13 @@ Learn more about Nubo at [our website](https://sensirion-connected.com/solutions
 ### Do-it-yourself Demonstrators
 ![Do it yourself](images/esp_based.png ":size=30%")
 
-You can create your own demonstrators and connect them to myAmbience!
+You can create your own demonstrators and connect them to MyAmbience!
 Learn how to create your own on [our Github page](https://github.com/Sensirion/arduino-ble-gadget)!
 
 
 # Getting Started
 
-## Download myAmbience for your OS
+## Download MyAmbience for your OS
 
 ### Apple iOS:
 You can download the iOS MyAmbience app through the oficial Apple App Store through the following link or QR code:
@@ -64,13 +64,14 @@ You can download the Android MyAmbience app through the oficial Google Play Stor
 
 ## Requirements and Permissions
 
-The following permissions need to be set so that myAmbience can detect surrounding demonstrators:
+The following permissions need to be set so that MyAmbience can detect surrounding demonstrators:
 
-- Bluetooth on your device needs to be enabled and the app needs to have permissions for bluetooth
-- On Android devices location permissions need to be given in addition. We do not store location information, however this is required by the bluetooth functionality since on some Android versions these are coupled
+- Bluetooth on your device needs to be enabled and the app needs to have permissions for bluetooth.
+- On Android devices location permissions need to be given in addition. We do not store location information, however this is required by the bluetooth functionality since on some Android versions these are coupled.
+- In case you would like to get notifications when you download data from the demonstrators devices and export data, please allow notifications for MyAmbience.
 - The gadget needs to be in a range of 10-15 meters from the mobile. This ranges between devices, however, this is the typical operating distance of bluetooth devices.
 
-# Using myAmbience
+# Using MyAmbience
 
 ## Main Screens
 
@@ -89,7 +90,7 @@ MyAmbience is divided into three main screens:
 
 ### Gadget Overview
 
-The main screen of myAmbience offers an overview of all the nearby active gadgets. Normally gadgets within a 10-15m radius can be found.
+The main screen of MyAmbience offers an overview of all the nearby active gadgets. Normally gadgets within a 10-15m radius can be found.
 
 Each gadget has its own "card" which shows an overview of all the available sensor signals. The colors of the signals vary depending on the value and how "high or low" this is. An example is shown in the image below:
 
@@ -104,7 +105,7 @@ If you want to focus only on one gadget, you can tap on the card and a focused v
 
 ### Favorite Gadgets
 
-A new feature in myAmbience is the ability to "Favorite" gadgets. Favorite gadgets will always show on the top of the gadget list. 
+MyAmbience allows you to mark "Favorite" gadgets. Favorite gadgets will always show on the top of the gadget list. 
 
 To favorite a gadget, simply tap the heart icon on the bottom right of each gadget card as shown in the picture below:
 
@@ -114,44 +115,32 @@ The favorite settings are persistent even if your gadget is not in reach. The ne
 
 ### Gadget Settings
 
-You can configure certain aspects of your gadget! by tapping the cog wheel icon next to the favorites icon on the bottom right you go into the settings view. An example is shown below for the SCD4x CO2 Gadget:
+You can configure certain aspects of your gadget! By tapping the cog wheel icon next to the favorites icon on the bottom right you go into the settings view. An example is shown below for the SCD4x CO2 Gadget:
 
 ![Settings View](images/Settings.PNG ":size=40%") 
 
 Through the settings view you can:
-- Update the firmware of your gadget. The app will automatically detect a firmware which needs to be updated and will let you know in the Settings View
+- Update the firmware of your gadget. The app will automatically detect a firmware which needs to be updated and will allow you to start the update.
 - Change the name of your gadget. Please note, that this will change the gadget name only for your own device and not overall of the gadget
 - See the battery percentage, the available logging memory and adjust the logging interval 
 - (CO2 Gadget Only) Adjust the LED Brightness
-- Turn on/off the LED by tapping on the light bulb on the bottom right
+  - Turn on/off the LED by tapping on the light bulb on the bottom right
+- (CO2 Gadget Only) Perform a Forced Recalibration
 
 
 ## Plots
 
 
-The plot view is very useful to understand the historical data from your environment. For example how is the CO2 concentration when you sleep at night with closed doors and windows or what is the relative humidity in the summer versus the winter
+The plot view is very useful to understand the historical data from your environment. For example how the CO2 concentration is when you sleep at night with closed doors and windows or what the relative humidity is in the summer versus the winter.
 
 ### Gadget Selection
 
-To see the plot for a gadget you can select it from the buttons in the bottom of the app. Selected gadgets show in Green.
+To see the plot for a gadget you can select it from the buttons in the bottom of the app. Selected gadgets show in green.
 
 Please note: By default a single tap on a gadget adds it in the list of the gadgets. If you would like to focus on the plot of only one gadget you have to long press the gadget button 
 
 ![Plots](images/Plot.PNG ":size=40%")
 
-### Fetching old data
-
-Currently, only the data captured while the app is active are shown on the plot area. However, most of the gadgets have internal memory which allows them to log the data and send it to myAmbience upon request.
-
-To fetch the previously recorded data you need to press the download icon on the top right which will take you to the fetching view. 
-
-![Fetch Data](images/Fetch.PNG ":size=40%")
-
-The app needs to firstly connect to the gadget and then download the previously recorded data.
-
-It is recommended that you are in close proximity of the gadget when trying to fetch the data.
-
-In case the process fails or is interrupted you can start over again by following the same steps.
 
 ### Plot Interaction
 The plot interaction is intuitive and simple to allow the users to focus on the signal values.
@@ -176,25 +165,75 @@ MyAmbience gives you the ability to quickly jump between different time ranges b
 
 ![Time ranges](images/Time%20ranges%20and%20single%20plot.PNG ":size=40%")
 
-A new mode in myAmbience is the live mode, this will automatically move the plot to always show the new values and it will retain the current time range. As soon as you manually move the plot, the app goes out of live mode and allows the user to see the previous measurements.
+A new mode in MyAmbience is the live mode, this will automatically move the plot to always show the new values and it will retain the current time range. As soon as you manually move the plot, the app goes out of live mode and allows the user to see the previous measurements.
+
+## Fetching stored data from gadget
+
+While the app is active, live data is captured and stored for all gadgets in range. However, most of the gadgets have internal memory which allows them to log the data and send it to MyAmbience upon request. The logging interval on the gadget device can be changed in the [Gadget Settings](#gadget-settings).
+
+There are two ways to initiate a data download:
+
+- In the Plot screen, press the download icon on the top right which will take you to the download view and start fetching data for all selected gadgets.
+- In the Dashboard, press the download icon on the gadget card. This will take you to the download view and start fetching data for this gadget.
+
+The app needs to firstly connect to the gadget and then download the previously recorded data.
+
+It is recommended that you are in close proximity of the gadget when trying to fetch the data.
+
+![Download Data](images/DownloadsOverview.png ":size=40%")
+
+On the download screen, you are informed about the download in progress. 
+To cancel a running download, swipe the card to the left. Any data already downloaded is discarded.
+
+As the download of data might take some time, you can leave the download view and the data download will continue in background. You are informed about
+the download progress with a notification. Additionaly, the download state is visualized with an icon in the bottom right of the gadgets's dashboard card.
+You can go back to the download view by tapping on that button at any time or by using the download button in the Plot screen. 
+
+![Download Complete](images/DownloadsComplete.png ":size=40%")
+
+When a download is finished, the download view shows you the number of samples downloaded and their time range. You can explore the data in the Plot screen.
+
+When a download failed or was interrupted due to lost or weak Bluetooth Connection, it is visualized in the download view. You can retry the download by pressing the refresh button on the right of a download card.
+
+If you do no longer want to keep the download card in the list, you can dismiss the card by swiping to the left or removing all downloads not in progress anymore with the "Dismiss finished" button in the bottom right corner of the screen.
 
 
-### Export and Share data
+## Export and Share data
 
-You can export the logged data from your gadgets through myAmbience.
+You can export the stored data from your gadgets.
 
-The logged data are currently automatically exported in an EDF file format. The EDF format is CSV compatible which  means you can open it with Excel or any other csv handling capable editor.
+To select the data to export, you have two options:
+
+Use the share button on the top right in the Plot screen to export data for all selected gadgets.
+
+![Share Data from Plot](images/Share.PNG ":size=10%")
+
+Go to the [Manage Gadgets](#manage-gadgets) Menu, select one or more gadgets and choose the export option.
+
+![Share Data from Manage Gadgets](images/ShareFromManage.png ":size=10%")
+
+Once you have started a export, the Share exported data screen will open and show the progress of the export.
+You can leave this screen and the export will continue in the background. You will be notified once the export is finished.
+To navigate back to the export screen, use the [Share exported data](#share-exported-data) menu.
+
+![Share exported data](images/Export%20Overview.PNG ":size=40%")
+
+Once the export is finished, you can share your data by tapping on the share button on the card.
+
+The exported data persists until you dismiss it by swiping the entry to the left or you close the app.
+
+The data is exported in an EDF file format. The EDF format is CSV compatible which means you can open it with Excel or any other editor capable of handling CSV.
 The EDF files are compatible with ControlCenter and Dataviewer (Sensirion Evaluation Software), so that you can plot your gadget data in Dataviewer.
-![Share Data](images/Share.PNG ":size=40%")
 
 For more information about EDF files please visit the [ControlCenter Manual](https://sensirion.github.io/ControlCenterManual/#/?id=edf-files-explained).
+
 
 ## Menu
 ![Menu](images/Menu.PNG ":size=40%")
 
 ### App Settings
 
-In the app settings you can adjust the general settings of myAmbience:
+In the app settings you can adjust the general settings of MyAmbience:
 
 - Adjust the measurement system from measuring in degrees Celcius or degrees Fahrenheit or Kelvin
 - Select which computed signals will be displayed if the measured signals are available. To learn more about the computed signals for the SHT4x SmartGadget visit the link [here](https://sensirion.com/resource/application_note/sht/glance).
@@ -211,12 +250,17 @@ The Manage gadgets area allows you to see all the previously detected gadgets an
 - delete the gadget and its data
 - delete the data of the gadget
 - Select multiple gadgets
+- export data of the gadget
 
 There are three different states a gadget can be:
 
 - Active: denoted in green color
 - Connecting: Denoted in light blue color
 - Not found (Gadget is out of reach): Denoted in grey color
+
+### Share exported data
+
+For more details about how to start a data export, please refer to [Export and Share data](#export-and-share-data) section.
 
 ## Support and Feedback
 
@@ -225,8 +269,7 @@ solve problems of our users, therefore gathering feedback and supporting
 our users is of outmost importance to us.
 
 If you request any type of additional support please do not hesitate to
-contact us by writing a quick note to
-[support@sensirion.com](mailto:support@sensirion.com) with the topic 'MyAmbience Feedback'.
+contact us by filing an issue on our [developer support page](https://sensirion.atlassian.net/servicedesk/customer/portal/1) mentioning MyAmbience as a product.
 
 # Appendix
 ## Privacy Policy and information we collect
