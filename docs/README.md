@@ -1,7 +1,7 @@
 # Introduction
 
 ## About this document
-![Pinout](images/app_icon.png ":size=30%")
+![Pinout](images/app_icon.png ":size=10%")
 
 This is a short introduction to the Sensirion MyAmbience app for iOS and Android devices. 
 MyAmbience is used together with the official Sensirion Demonstrators which can be found on the [Sensirion website](https://sensirion.com/search?q=gadget) as well as 3rd party do-it-yourself demonstrators.
@@ -86,7 +86,7 @@ MyAmbience is divided into three main screens:
 
 
 ## Dashboard
-![Dashboard](images/Dashboard.PNG ":size=40%")
+![Dashboard](images/Dashboard.PNG ":size=20%")
 
 ### Gadget Overview
 
@@ -94,14 +94,14 @@ The main screen of MyAmbience offers an overview of all the nearby active gadget
 
 Each gadget has its own "card" which shows an overview of all the available sensor signals. The colors of the signals vary depending on the value and how "high or low" this is. An example is shown in the image below:
 
-![Gadget Overview](images/Gadget%20Overview.PNG ":size=40%") 
+![Gadget Overview](images/Gadget%20Overview.PNG ":size=20%") 
 
 The gadgets are listed in an alphabetical order and the user can scroll down to see all of the available gadgets.
 
 ### Single Gadget Focus view
 If you want to focus only on one gadget, you can tap on the card and a focused view emerges which shows the available values for each gadget and a set of statistics for the previous 24 hours such as minimum and maximum value as well as an average. An example of the focused view is shown in the image below:
 
-![Focus View](images/Focus%20View%20SHT.PNG ":size=40%") 
+![Focus View](images/Focus%20View%20SHT.PNG ":size=20%") 
 
 ### Favorite Gadgets
 
@@ -109,7 +109,7 @@ MyAmbience allows you to mark "Favorite" gadgets. Favorite gadgets will always s
 
 To favorite a gadget, simply tap the heart icon on the bottom right of each gadget card as shown in the picture below:
 
-![Favorite Gadgets](images/Favorite%20gadgets.PNG ":size=40%") 
+![Favorite Gadgets](images/Favorite%20gadgets.PNG ":size=20%") 
 
 The favorite settings are persistent even if your gadget is not in reach. The next time you are close to your gadget it will show up on top!
 
@@ -117,7 +117,7 @@ The favorite settings are persistent even if your gadget is not in reach. The ne
 
 You can configure certain aspects of your gadget! By tapping the cog wheel icon next to the favorites icon on the bottom right you go into the settings view. An example is shown below for the SCD4x CO2 Gadget:
 
-![Settings View](images/Settings.PNG ":size=40%") 
+![Settings View](images/Settings.PNG ":size=20%") 
 
 Through the settings view you can:
 - Update the firmware of your gadget. The app will automatically detect a firmware which needs to be updated and will allow you to start the update.
@@ -139,7 +139,7 @@ To see the plot for a gadget you can select it from the buttons in the bottom of
 
 Please note: By default a single tap on a gadget adds it in the list of the gadgets. If you would like to focus on the plot of only one gadget you have to long press the gadget button 
 
-![Plots](images/Plot.PNG ":size=40%")
+![Plots](images/Plot.PNG ":size=20%")
 
 
 ### Plot Interaction
@@ -157,13 +157,13 @@ A new feature is the ability to go into full screen mode so that you can focus o
 
 By tapping the arrow button just below the plot you enter the fullscreen mode as shown in the image below:
 
-![Fullscreen mode](images/Fullscreen.PNG ":size=40%")
+![Fullscreen mode](images/Fullscreen.PNG ":size=20%")
 
 #### Time ranges and live mode
 
 MyAmbience gives you the ability to quickly jump between different time ranges by tapping the relevant button below the plot area. This is particularly useful when you want to contrast data between multiple days or weeks to identify patterns in your indoor environment. 
 
-![Time ranges](images/Time%20ranges%20and%20single%20plot.PNG ":size=40%")
+![Time ranges](images/Time%20ranges%20and%20single%20plot.PNG ":size=20%")
 
 A new mode in MyAmbience is the live mode, this will automatically move the plot to always show the new values and it will retain the current time range. As soon as you manually move the plot, the app goes out of live mode and allows the user to see the previous measurements.
 
@@ -180,7 +180,7 @@ The app needs to firstly connect to the gadget and then download the previously 
 
 It is recommended that you are in close proximity of the gadget when trying to fetch the data.
 
-![Download Data](images/DownloadsOverview.png ":size=40%")
+![Download Data](images/DownloadsOverview.png ":size=20%")
 
 On the download screen, you are informed about the download in progress. 
 To cancel a running download, swipe the card to the left. Any data already downloaded is discarded.
@@ -189,7 +189,7 @@ As the download of data might take some time, you can leave the download view an
 the download progress with a notification. Additionaly, the download state is visualized with an icon in the bottom right of the gadgets's dashboard card.
 You can go back to the download view by tapping on that button at any time or by using the download button in the Plot screen. 
 
-![Download Complete](images/DownloadsComplete.png ":size=40%")
+![Download Complete](images/DownloadsComplete.png ":size=20%")
 
 When a download is finished, the download view shows you the number of samples downloaded and their time range. You can explore the data in the Plot screen.
 
@@ -206,17 +206,17 @@ To select the data to export, you have two options:
 
 Use the share button on the top right in the Plot screen to export data for all selected gadgets.
 
-![Share Data from Plot](images/Share.PNG ":size=10%")
+![Share Data from Plot](images/Share.PNG ":size=20%")
 
 Go to the [Manage Gadgets](#manage-gadgets) Menu, select one or more gadgets and choose the export option.
 
-![Share Data from Manage Gadgets](images/ShareFromManage.png ":size=10%")
+![Share Data from Manage Gadgets](images/ShareFromManage.png ":size=20%")
 
 Once you have started a export, the Share exported data screen will open and show the progress of the export.
 You can leave this screen and the export will continue in the background. You will be notified once the export is finished.
 To navigate back to the export screen, use the [Share exported data](#share-exported-data) menu.
 
-![Share exported data](images/Export%20Overview.PNG ":size=40%")
+![Share exported data](images/Export%20Overview.PNG ":size=20%")
 
 Once the export is finished, you can share your data by tapping on the share button on the card.
 
@@ -229,7 +229,7 @@ For more information about EDF files please visit the [ControlCenter Manual](htt
 
 
 ## Menu
-![Menu](images/Menu.PNG ":size=40%")
+![Menu](images/Menu.PNG ":size=20%")
 
 ### App Settings
 
@@ -242,7 +242,7 @@ In the app settings you can adjust the general settings of MyAmbience:
 
 ### Manage Gadgets
 
-![Manage Gadgets](images/Manage%20gadgets.PNG ":size=40%")
+![Manage Gadgets](images/Manage%20gadgets.PNG ":size=20%")
 
 The Manage gadgets area allows you to see all the previously detected gadgets and perform certain actions with their data. Actions include:
 
