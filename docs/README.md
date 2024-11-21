@@ -225,6 +225,9 @@ The exported data persists until you dismiss it by swiping the entry to the left
 The data is exported in an EDF file format. The EDF format is CSV compatible which means you can open it with Excel or any other editor capable of handling CSV.
 The EDF files are compatible with ControlCenter and Dataviewer (Sensirion Evaluation Software), so that you can plot your gadget data in Dataviewer.
 
+The timestamps are displayed in your local time. If you want to have timezone offsets included with your timestamps, you can enable this in the app settings.
+However, this makes it more difficult to display the data in Excel as it can't handle offsets automatically.
+
 For more information about EDF files please visit the [ControlCenter Manual](https://sensirion.github.io/ControlCenterManual/#/?id=edf-files-explained).
 
 
@@ -237,6 +240,7 @@ In the app settings you can adjust the general settings of MyAmbience:
 
 - Adjust the measurement system from measuring in degrees Celcius or degrees Fahrenheit or Kelvin
 - Select which computed signals will be displayed if the measured signals are available. To learn more about the computed signals for the SHT4x SmartGadget visit the link [here](https://sensirion.com/resource/application_note/sht/glance).
+- Select whether you want timezone offsets added to the timestamps in the exported data.
 - Opt in/out in our analytics
 - Connect to a Nubo device
 
