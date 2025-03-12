@@ -6,7 +6,7 @@
 This is a short introduction to the Sensirion MyAmbience app for iOS and Android devices. 
 MyAmbience is used together with the official Sensirion Demonstrators which can be found on the [Sensirion website](https://sensirion.com/search?q=gadget) as well as 3rd party do-it-yourself demonstrators.
 
-The Manual refers to MyAmbience version 3.0 and newer. 
+The Manual refers to MyAmbience version 3.5 and newer. 
 
 ## Supported Demonstrators
 
@@ -69,7 +69,7 @@ The following permissions need to be set so that MyAmbience can detect surroundi
 - Bluetooth on your device needs to be enabled and the app needs to have permissions for bluetooth.
 - On Android devices location permissions need to be given in addition. We do not store location information, however this is required by the bluetooth functionality since on some Android versions these are coupled.
 - In case you would like to get notifications when you download data from the demonstrators devices and export data, please allow notifications for MyAmbience.
-- The gadget needs to be in a range of 10-15 meters from the mobile. This ranges between devices, however, this is the typical operating distance of bluetooth devices.
+- The gadget needs to be in a range of 10-15 meters from the mobile. This varies between devices, however, this is the typical operating distance of bluetooth devices.
 
 # Using MyAmbience
 
@@ -99,7 +99,7 @@ Each gadget has its own "card" which shows an overview of all the available sens
 The gadgets are listed in an alphabetical order and the user can scroll down to see all of the available gadgets.
 
 ### Single Gadget Focus view
-If you want to focus only on one gadget, you can tap on the card and a focused view emerges which shows the available values for each gadget and a set of statistics for the previous 24 hours such as minimum and maximum value as well as an average. An example of the focused view is shown in the image below:
+If you want to focus only on one gadget, you can tap on the card and a focused view emerges which shows the available values for each gadget. Tapping on a value card opens the plot for this signal. Additionally, there is a set of statistics for the previous 24 hours such as minimum and maximum value as well as an average. An example of the focused view is shown in the image below:
 
 ![Focus View](images/Focus%20View%20SHT.PNG ":size=20%") 
 
@@ -166,6 +166,10 @@ MyAmbience gives you the ability to quickly jump between different time ranges b
 ![Time ranges](images/Time%20ranges%20and%20single%20plot.PNG ":size=20%")
 
 A new mode in MyAmbience is the live mode, this will automatically move the plot to always show the new values and it will retain the current time range. As soon as you manually move the plot, the app goes out of live mode and allows the user to see the previous measurements.
+
+#### Data down sampling
+
+Depending on the X-Axis range selected the original data is down sampled. This allowes for performant plotting. You can disable the data down sampling for the plot in the [App Settings](#app-settings).
 
 ## Fetching stored data from gadget
 
@@ -241,8 +245,18 @@ In the app settings you can adjust the general settings of MyAmbience:
 - Adjust the measurement system from measuring in degrees Celcius or degrees Fahrenheit or Kelvin
 - Select which computed signals will be displayed if the measured signals are available. To learn more about the computed signals for the SHT4x SmartGadget visit the link [here](https://sensirion.com/resource/application_note/sht/glance).
 - Select whether you want timezone offsets added to the timestamps in the exported data.
+- Select whether you want to down sample live data before storing to the data base, see [Live data down sampling](#live-data-down-sampling) for details.
+- Select whether the data displayed in the plot is down-sampled for better performance. Down sampling rate depends on the currently selected X-Axis range.
 - Opt in/out in our analytics
 - Connect to a Nubo device
+
+#### Live data down sampling
+
+Depending on the gadget, the live data updates every few seconds. As usually there is no such high data resolution needed for the history data, this options allows you to down sample the live values before perstisting. Activating the down-sampling reduces storage consumption and also helps to keep the app performant. The persisted data is used for statistic in [Single Gadget Focus view](#single-gadget-focus-view), plot [Plots](#plots) and data export [Data Export](#export-and-share-data). Note that the plot shows the full resolution for the live data that was traced in the current app session.
+
+The down sampling resolution is set with following logic:
+- If a gadget supports data logging, the data logging interval set on the gadget is used as down sampling interval. It is limited to a maximum of 10 minutes. See in the [Gadget Settings](#gadget-settings) to check if your gadget supports data logging. The currently set logging interval is fetched from the gadgets upon discovery and cached in the app.
+- Default down sampling interval is 1 minute. This is applied if the gadget does not support data logging.
 
 ### Manage Gadgets
 
