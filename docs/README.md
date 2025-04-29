@@ -113,19 +113,23 @@ To favorite a gadget, simply tap the heart icon on the bottom right of each gadg
 
 The favorite settings are persistent even if your gadget is not in reach. The next time you are close to your gadget it will show up on top!
 
-### Gadget Settings
+### Device Settings
 
-You can configure certain aspects of your gadget! By tapping the cog wheel icon next to the favorites icon on the bottom right you go into the settings view. An example is shown below for the SCD4x CO2 Gadget:
+You can configure certain aspects of your device! By tapping the cog wheel icon next to the favorites icon on the bottom right you go into the settings view. An example is shown below for the SHT43 Demo Board:
 
 ![Settings View](images/Settings.PNG ":size=20%") 
 
 Through the settings view you can:
-- Update the firmware of your gadget. The app will automatically detect a firmware which needs to be updated and will allow you to start the update.
-- Change the name of your gadget. Please note, that this will change the gadget name only for your own device and not overall of the gadget
-- See the battery percentage, the available logging memory and adjust the logging interval 
-- (CO2 Gadget Only) Adjust the LED Brightness
-  - Turn on/off the LED by tapping on the light bulb on the bottom right
-- (CO2 Gadget Only) Perform a Forced Recalibration
+- Update the firmware of your device. The app will automatically detect a firmware which needs to be updated and will allow you to start the update.
+- Change the name of your device. 
+  - (SHT43 Demo Board) The name is stored on the board, thus the name is shared with other users paired to this demo board.
+  - (CO2 Gadget, SHT4x Smart Gadget, SHT31 Smart Gadget) The name is saved locally on your phone and thus not shared with other users of those gadgets.
+- See the battery percentage, the available logging memory and adjust the logging interval
+- (SHT43 Demo Board Only) Download the calibration certificate for the SHT43 sensor.
+- (SHT43 Demo Board Only) Switch privacy mode. In Privacy Mode, no live data updates are sent.
+- (CO2 Gadget Only) Adjust the LED Brightness.
+  - Turn on/off the LED by tapping on the light bulb on the bottom right.
+- (CO2 Gadget Only) Perform a Forced Recalibration.
 
 
 ## Plots
@@ -173,7 +177,7 @@ Depending on the X-Axis range selected the original data is down sampled. This a
 
 ## Fetching stored data from gadget
 
-While the app is active, live data is captured and stored for all gadgets in range. However, most of the gadgets have internal memory which allows them to log the data and send it to MyAmbience upon request. The logging interval on the gadget device can be changed in the [Gadget Settings](#gadget-settings).
+While the app is active, live data is captured and stored for all gadgets in range. However, most of the gadgets have internal memory which allows them to log the data and send it to MyAmbience upon request. The logging interval on the gadget device can be changed in the [Device Settings](#gadget-settings).
 
 There are two ways to initiate a data download:
 
@@ -255,7 +259,7 @@ In the app settings you can adjust the general settings of MyAmbience:
 Depending on the gadget, the live data updates every few seconds. As usually there is no such high data resolution needed for the history data, this options allows you to down sample the live values before perstisting. Activating the down-sampling reduces storage consumption and also helps to keep the app performant. The persisted data is used for statistic in [Single Gadget Focus view](#single-gadget-focus-view), plot [Plots](#plots) and data export [Data Export](#export-and-share-data). Note that the plot shows the full resolution for the live data that was traced in the current app session.
 
 The down sampling resolution is set with following logic:
-- If a gadget supports data logging, the data logging interval set on the gadget is used as down sampling interval. It is limited to a maximum of 10 minutes. See in the [Gadget Settings](#gadget-settings) to check if your gadget supports data logging. The currently set logging interval is fetched from the gadgets upon discovery and cached in the app.
+- If a gadget supports data logging, the data logging interval set on the gadget is used as down sampling interval. It is limited to a maximum of 10 minutes. See in the [Device Settings](#gadget-settings) to check if your gadget supports data logging. The currently set logging interval is fetched from the gadgets upon discovery and cached in the app.
 - Default down sampling interval is 1 minute. This is applied if the gadget does not support data logging.
 
 ### Manage Gadgets
