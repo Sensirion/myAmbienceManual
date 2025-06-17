@@ -6,7 +6,7 @@
 This is a short introduction to the Sensirion MyAmbience app for iOS and Android devices. 
 MyAmbience is used together with the official Sensirion Demonstrators which can be found on the [Sensirion website](https://sensirion.com/search?q=gadget) as well as 3rd party do-it-yourself demonstrators.
 
-The Manual refers to MyAmbience version 3.5 and newer. 
+The Manual refers to MyAmbience version 3.6 and newer. 
 
 ## Supported Demonstrators
 
@@ -20,6 +20,11 @@ The following Demonstrators are currently supported:
 ![SCD4x CO2 Gadget](images/my_co2_gadget.png ":size=30%")
 
 Learn more about the SCD4x and the SCD4x CO2 Gadget at [our website](https://sensirion.com/products/catalog/SCD4x-CO2-Gadget)
+
+### SHT43 DemoBoard
+![SHT43 DemoBoard](images/sht43_demo_board.png ":size=30%")
+
+Learn more about the SHT43 and the SHT43 DemoBoard at [our website](https://sensirion.com/products/catalog/SHT43-DemoBoard)
 
 ### SHT4x Smart Gadget
 ![SHT4x SmartGadget](images/sht4x_gadget.png ":size=30%")
