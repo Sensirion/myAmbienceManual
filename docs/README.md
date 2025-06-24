@@ -17,33 +17,33 @@ Visit us at our next trade fair near you. Go to [our website](sensirion.com/fair
 The following Demonstrators are currently supported:
 
 ### SCD4x CO2 Gadget
-![SCD4x CO2 Gadget](images/my_co2_gadget.png ":size=30%")
+![SCD4x CO2 Gadget](images/my_co2_gadget.png ":size=20%")
 
 Learn more about the SCD4x and the SCD4x CO2 Gadget at [our website](https://sensirion.com/products/catalog/SCD4x-CO2-Gadget)
 
 ### SHT43 DemoBoard
-![SHT43 DemoBoard](images/sht43_demo_board.png ":size=30%")
+![SHT43 DemoBoard](images/sht43_demo_board.png ":size=20%")
 
 Learn more about the SHT43 and the SHT43 DemoBoard at [our website](https://sensirion.com/products/catalog/SHT43-DemoBoard)
 
 ### SHT4x Smart Gadget
-![SHT4x SmartGadget](images/sht4x_gadget.png ":size=30%")
+![SHT4x SmartGadget](images/sht4x_gadget.png ":size=20%")
 
 Learn more about the SHT4x and the SHT4x SmartGadget at [our website](https://sensirion.com/products/catalog/SHT4x-Smart-Gadget)
 
 ### SHT31 SmartGadget
-![SCD4x CO2 Gadget](images/sht31_gadget.png ":size=30%")
+![SCD4x CO2 Gadget](images/sht31_gadget.png ":size=20%")
 
 This is deprecated but still compatible with the MyAmbience app.
 Learn more about the SHT3x and the SHT31 SmartGadget at [our website](https://sensirion.com/products/catalog/SHT31-Smart-Gadget)
 
 ### Nubo Air Monitoring system
-![Nubo Air Monitoring system](images/nubo.png ":size=30%")
+![Nubo Air Monitoring system](images/nubo.png ":size=20%")
 
 Learn more about Nubo at [our website](https://sensirion-connected.com/solutions/nubo-sphere/)
 
 ### Do-it-yourself Demonstrators
-![Do it yourself](images/esp_based.png ":size=30%")
+![Do it yourself](images/esp_based.png ":size=20%")
 
 You can create your own demonstrators and connect them to MyAmbience!
 Learn how to create your own on [our Github page](https://github.com/Sensirion/arduino-ble-gadget)!
